@@ -5,9 +5,14 @@ class Database {
     private $db_name = "SistemaPDV";
     private $username = "root";
     private $password = "Wasd1313@";
+   
     public $conn;
 
-    private function getConnection() {
+    public function __construct() {
+        $this->getConnection();
+    }
+
+    public function getConnection() {
 
         try {
             $this->conn = new mysqli($this->host, $this->username, $this->password, $this->db_name);
@@ -20,6 +25,7 @@ class Database {
 
         return $this->conn;
     }
+    
 }
 
 ?>
