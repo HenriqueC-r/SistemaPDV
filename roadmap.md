@@ -8,9 +8,9 @@
 
 ## Produto
 - [x] Criar classe Produto
-- [ ] Buscar produto por código de barras
-- [ ] Retornar produto em JSON
-- [ ] Tratar produto não encontrado
+- [x] Buscar produto por código de barras
+- [x] Retornar produto em JSON
+- [x] Tratar produto não encontrado
 
 ## Venda
 - [ ] Atualizar estoque
