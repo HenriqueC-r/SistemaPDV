@@ -7,7 +7,7 @@
 - [x] Criar classe Database
 
 ## Produto
-- [ ] Criar classe Produto
+- [x] Criar classe Produto
 - [ ] Buscar produto por código de barras
 - [ ] Retornar produto em JSON
 - [ ] Tratar produto não encontrado
