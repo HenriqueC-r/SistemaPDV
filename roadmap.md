@@ -29,9 +29,9 @@
 ==================================================
 
 ## Interface
-- [ ] Montar tela do PDV
-- [ ] Estilizar com CSS
-- [ ] Organizar layout
+- [x] Montar tela do PDV
+- [x] Estilizar com CSS
+- [x] Organizar layout
 
 ## Integração
 - [ ] Capturar código digitado
