@@ -3,35 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDV</title>
+    <title>Sistema PDV</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    
-    <div class="PDV"></div>
+    <div class="PDV">
 
-        <h1>Código</h1>
+        <h1>PDV</h1>
 
-        <div class="campo">
-            <label for="codigo">Código</label>
-            <input
-                type="text"
-                id="codigo"> 
-        </div>
+    <div class="campo">
+        <label for="codigo">Código</label>
+        <input 
+            type="text" 
+            id="codigo"
+            placeholder="Digite o código">
+    </div>
 
-        <div class="campo">
-            <label for="produto">Produto</label>
-            <input 
-                type="text"
-                id="produto">
-        </div>
+    <button id="buscar">Buscar</button>
 
-        <div class="campo">
-            <label for="valor">Valor</label>
-            <input 
-                type="text"
-                id="valor">
-        </div>
+    <div id="informacoes">
 
-    
+    <div class="campo">
+        <label for="produto">Produto</label>
+        <input type="text" id="produto" readonly>
+    </div>
+
+    <div class="campo">
+        <label for="valor">Valor</label>
+        <input type="text" id="valor" readonly>
+    </div>
+
+    <div class="campo">
+        <label for="estoque">Estoque</label>
+        <input type="text" id="estoque" readonly>
+    </div>
+
+</div>
+
+</div>
 </body>
 </html>
