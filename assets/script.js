@@ -21,12 +21,35 @@ buscar.addEventListener("click", function () {
     const codigoBarras = codigo.value.trim();
 
     fetch("api/buscarpdv.php?codigo_barras=" + codigoBarras)
-        .then(response => response.json())
-        .then(dados => {
-            console.log(dados);
+    .then(response => response.json())
+    .then(dados => {
+
+        console.log(dados);
+        console.log(dados.success);
+
+        if (dados.success) {
+            console.log("Entrou no IF");
+
+            informacoes.style.display = "block";
+
+            produto.value = dados.produto.nome;
+            valor.value = dados.produto.preco;
+            estoque.value = dados.produto.estoque;
+
+            mensagem.textContent = "";
+
+        } else {
+
+            console.log("Entrou no ELSE");
+
+            informacoes.style.display = "none";
+            mensagem.textContent = "❌ " + dados.message;
+
+        }
+
         })
-        .catch(erro => {
-            console.error("Erro:", erro);
-        });
+    .catch(erro => {
+        console.error("Erro:", erro);
+    });
 
 });
