@@ -2,9 +2,9 @@
 
 class Database {
     private $host = "localhost";
-    private $db_name = "SistemaPDV";
+    private $db_name = "Seu_banco";
     private $username = "root";
-    private $password = "Wasd1313@";
+    private $password = "Sua_senha";
    
     public $conn;
 
